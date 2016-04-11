@@ -90,7 +90,6 @@
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
 	<access origin="*" />
-	<access origin="" />
 	<plugin name="cordova-plugin-whitelist" version="1" />
 	<allow-intent href="http://*/*" />
 	<allow-intent href="https://*/*" />
