@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js" type="text/javascript"></script>
+	<script>
+    $(document).ready(function() {
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'grab.mp3');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+
+        $.get();
+
+        audioElement.addEventListener("load", function() {
+            audioElement.play();
+        }, true);
+
+        $('.play').click(function() {
+            audioElement.play();
+        });
+
+        $('.pause').click(function() {
+            audioElement.pause();
+        });
+    });
+</script>  
+.play {
+	pointer : pointer;
+}    
+.pause {
+	pointer : pointer;
+}    
+<style>
+</style>
+</head>
+<body>
+	<div class="play">Play</div>
+
+	<div class="pause">Stop</div>
+
+</body>
+</html>
